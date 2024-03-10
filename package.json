@@ -1,5 +1,5 @@
 {
-  	"name": "alpinejs-syntax-highlight",
+	"name": "alpinejs-syntax-highlight",
 	"displayName": "Alpine.js Syntax Highlight",
 	"description": "Javascript syntax highlighting for Alpine.js x- attributes",
 	"author": "Greg Ransons",
@@ -25,7 +25,7 @@
 	"contributes": {
 		"languages": [
 			{
-			  "id": "inline-alpinejs"
+				"id": "inline-alpinejs"
 			}
 		],
 		"grammars": [
@@ -34,9 +34,10 @@
 				"path": "./syntaxes/injection.json",
 				"scopeName": "html.alpinejs.attribute",
 				"injectTo": [
-					"text.html.derivative", 
-					"text.html.php", 
-					"text.html.twig"
+					"text.html.derivative",
+					"text.html.php",
+					"text.html.twig",
+					"source.heex"
 				],
 				"embeddedLanguages": {
 					"meta.embedded.inline.alpinejs": "javascript"

@@ -1,12 +1,13 @@
 # alpine-syntax-highlight
 
-Javascript syntax highlighting for x- attribute values in html for [Alpine JS](https://alpinejs.dev/)
+Javascript syntax highlighting for x- attribute values in html, php, twig, heex for [Alpine JS](https://alpinejs.dev/)
 
 ## Supported Files
 
 html
 php
 twig
+heex
 
 ## Credit
 

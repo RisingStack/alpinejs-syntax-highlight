@@ -1,6 +1,11 @@
 {
     "scopeName": "html.alpinejs.attribute",
-    "injectionSelector": ["L:text.html.derivative", "L:text.html.php", "L:text.html.twig"],
+    "injectionSelector": [
+        "L:text.html.derivative",
+        "L:text.html.php",
+        "L:text.html.twig",
+        "L:source.heex"
+    ],
     "patterns": [
         {
             "include": "#alpine-directives"
@@ -14,22 +19,22 @@
             "captures": {
                 "1": {
                     "name": "entity.other.attribute-name.html"
-                  },
-                  "2": {
+                },
+                "2": {
                     "name": "punctuation.separator.key-value.html"
-                  },
-                  "3": {
+                },
+                "3": {
                     "name": "entity.other.attribute-name.html"
-                  },
-                  "4": {
+                },
+                "4": {
                     "name": "entity.other.attribute-name.html"
-                  },
-                  "5": {
+                },
+                "5": {
                     "name": "entity.other.attribute-name.html"
-                  },
-                  "6": {
+                },
+                "6": {
                     "name": "punctuation.separator.key-value.html"
-                  }
+                }
             },
             "patterns": [
                 {

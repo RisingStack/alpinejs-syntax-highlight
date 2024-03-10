@@ -1,0 +1,54 @@
+<form
+  id="register-form"
+  x-data="{pristine: undefined}"
+  x-init="$nextTick(() => { pristine = new Pristine($el) });"
+  x-on:submit.prevent="submit($el, pristine)"
+>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      name="email"
+      value={email}
+      id="email"
+      x-on:change=""
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      value={password}
+      required
+      minlength="6"
+    />
+  </div>
+  <div class="text-help">{error}</div>
+  <button type="submit">Login</button>
+</form>
+
+<script>
+  import Alpine from "alpinejs";
+  import Pristine from "pristinejs";
+
+  window.Pristine = Pristine;
+  window.Alpine = Alpine;
+
+  declare const htmx: any;
+
+  window.submit = function (form, pristine) {
+    if (pristine.validate()) {
+      htmx.trigger(form, "my-submit");
+    }
+  };
+
+  Alpine.start();
+</script>
+<style>
+  :global(.text-help) {
+    color: red;
+  }
+</style>
