@@ -11,4 +11,4 @@ heex
 
 ## Credit
 
-Based off of textmate syntaxes from [Vetur](https://github.com/vuejs/vetur)
+Added heex support to the [original](https://marketplace.visualstudio.com/items?itemName=sperovita.alpinejs-syntax-highlight), which is based off of textmate syntaxes from [Vetur](https://github.com/vuejs/vetur)
