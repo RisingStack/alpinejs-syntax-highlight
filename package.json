@@ -1,5 +1,5 @@
 {
-	"name": "alpinejs-syntax-highlight",
+	"name": "phoenix-alpinejs-syntax-highlight",
 	"displayName": "Alpine.js Syntax Highlight",
 	"description": "Javascript syntax highlighting for Alpine.js x- attributes",
 	"author": "Tamas Kadlecsik",
